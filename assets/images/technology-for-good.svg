@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Technology for a better society</title>
+  <desc id="desc">A glowing globe linked by a network of connected points, circled by an orbit ring, with a heartbeat line that turns into a circuit trace.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1a33"/>
+      <stop offset="0.55" stop-color="#11305a"/>
+      <stop offset="1" stop-color="#174a7c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5fd3ff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#5fd3ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="globe" cx="0.38" cy="0.32" r="0.75">
+      <stop offset="0" stop-color="#2a78b8"/>
+      <stop offset="1" stop-color="#0e2c55"/>
+    </radialGradient>
+    <linearGradient id="pulse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5fd3ff" stop-opacity="0"/>
+      <stop offset="0.25" stop-color="#5fd3ff"/>
+      <stop offset="0.75" stop-color="#7cf2c9"/>
+      <stop offset="1" stop-color="#7cf2c9" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="globeClip"><circle cx="500" cy="250" r="150"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="560" rx="18" fill="url(#bg)"/>
+  <rect width="1000" height="560" rx="18" fill="url(#dots)"/>
+
+  <!-- Distant stars -->
+  <g fill="#ffffff">
+    <circle cx="90" cy="70" r="1.6" opacity="0.6"/>
+    <circle cx="180" cy="150" r="1.1" opacity="0.4"/>
+    <circle cx="300" cy="60" r="1.3" opacity="0.5"/>
+    <circle cx="760" cy="80" r="1.6" opacity="0.6"/>
+    <circle cx="880" cy="160" r="1.1" opacity="0.45"/>
+    <circle cx="930" cy="60" r="1.3" opacity="0.5"/>
+    <circle cx="660" cy="40" r="1" opacity="0.4"/>
+    <circle cx="120" cy="300" r="1" opacity="0.35"/>
+    <circle cx="890" cy="330" r="1.2" opacity="0.4"/>
+  </g>
+
+  <!-- Glow behind globe -->
+  <circle cx="500" cy="250" r="260" fill="url(#glow)"/>
+
+  <!-- Orbit ring (back half) -->
+  <ellipse cx="500" cy="250" rx="250" ry="70" fill="none" stroke="#5fd3ff" stroke-opacity="0.25" stroke-width="2" transform="rotate(-14 500 250)"/>
+
+  <!-- Globe -->
+  <circle cx="500" cy="250" r="150" fill="url(#globe)"/>
+  <g clip-path="url(#globeClip)" fill="none" stroke="#8fd8ff" stroke-opacity="0.28" stroke-width="1.4">
+    <ellipse cx="500" cy="250" rx="150" ry="50"/>
+    <ellipse cx="500" cy="250" rx="150" ry="100"/>
+    <line x1="350" y1="250" x2="650" y2="250"/>
+    <ellipse cx="500" cy="250" rx="50" ry="150"/>
+    <ellipse cx="500" cy="250" rx="100" ry="150"/>
+    <line x1="500" y1="100" x2="500" y2="400"/>
+  </g>
+  <circle cx="500" cy="250" r="150" fill="none" stroke="#8fd8ff" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- Network connecting communities -->
+  <g stroke="#7cf2c9" stroke-opacity="0.7" stroke-width="1.6">
+    <line x1="430" y1="170" x2="540" y2="150"/>
+    <line x1="540" y1="150" x2="600" y2="220"/>
+    <line x1="430" y1="170" x2="410" y2="260"/>
+    <line x1="410" y1="260" x2="500" y2="300"/>
+    <line x1="500" y1="300" x2="600" y2="220"/>
+    <line x1="500" y1="300" x2="560" y2="350"/>
+    <line x1="410" y1="260" x2="450" y2="355"/>
+    <line x1="450" y1="355" x2="560" y2="350"/>
+    <line x1="540" y1="150" x2="500" y2="300"/>
+    <line x1="600" y1="220" x2="760" y2="190"/>
+    <line x1="410" y1="260" x2="250" y2="300"/>
+  </g>
+  <g fill="#7cf2c9">
+    <circle cx="430" cy="170" r="6"/>
+    <circle cx="540" cy="150" r="6"/>
+    <circle cx="600" cy="220" r="7"/>
+    <circle cx="410" cy="260" r="7"/>
+    <circle cx="500" cy="300" r="8"/>
+    <circle cx="560" cy="350" r="6"/>
+    <circle cx="450" cy="355" r="6"/>
+  </g>
+  <g fill="none" stroke="#7cf2c9" stroke-opacity="0.35" stroke-width="2">
+    <circle cx="500" cy="300" r="15"/>
+    <circle cx="600" cy="220" r="13"/>
+    <circle cx="410" cy="260" r="13"/>
+  </g>
+
+  <!-- Outer nodes beyond the globe -->
+  <g fill="#5fd3ff">
+    <circle cx="760" cy="190" r="7"/>
+    <circle cx="250" cy="300" r="7"/>
+  </g>
+
+  <!-- Orbit ring (front half) with satellite -->
+  <path d="M 257.4 310.5 A 250 70 -14 0 0 742.6 189.5" fill="none" stroke="#5fd3ff" stroke-opacity="0.75" stroke-width="2.5"/>
+  <g transform="translate(311 339) rotate(-14)">
+    <rect x="-9" y="-6" width="18" height="12" rx="2" fill="#e8f6ff"/>
+    <rect x="-34" y="-4" width="20" height="8" fill="#5fd3ff"/>
+    <rect x="14" y="-4" width="20" height="8" fill="#5fd3ff"/>
+    <line x1="-14" y1="0" x2="-9" y2="0" stroke="#e8f6ff" stroke-width="2"/>
+    <line x1="9" y1="0" x2="14" y2="0" stroke="#e8f6ff" stroke-width="2"/>
+  </g>
+
+  <!-- Heartbeat line becoming a circuit trace -->
+  <path d="M 40 470 L 300 470 L 325 470 L 345 430 L 370 510 L 395 400 L 420 490 L 440 470 L 600 470 L 630 440 L 760 440 L 790 470 L 960 470"
+        fill="none" stroke="url(#pulse)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+  <g fill="#7cf2c9">
+    <circle cx="600" cy="470" r="5"/>
+    <circle cx="760" cy="440" r="5"/>
+  </g>
+  <g fill="none" stroke="#7cf2c9" stroke-opacity="0.55" stroke-width="2">
+    <path d="M 680 440 L 680 410 L 720 410"/>
+    <circle cx="726" cy="410" r="5"/>
+    <path d="M 700 440 L 700 500 L 740 500"/>
+    <circle cx="746" cy="500" r="5"/>
+  </g>
+</svg>
